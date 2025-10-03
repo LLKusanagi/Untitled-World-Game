@@ -1,0 +1,118 @@
+:: StoryTitle
+Story 1
+
+
+:: StoryData
+{
+  "ifid": "F6CE8020-0E4A-4F65-B57D-88CEE5103817",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: \ Go {"position":"475,325","size":"100,100"}
+You've convinced yourself to head over to the city. You might be going a little nuts trying to judge if the distance between you and the city is close or far, but its there. There IS some food out here. Just some fruit, but at least its better than nothing. Ohh... tasty.
+
+[[Head onward]]
+
+
+:: Ehh, I'll just rest for a bit... {"position":"650,300","size":"100,100"}
+yeah... it's not worth it anyway... lets just rest here... <(´= ⩊ =`)>
+
+
+:: FoodScene {"position":"250,675","size":"100,100"}
+You seem to find a mysterious slab. You're wondering "What is this?" with all those buttons. And you try to activate the slab with one of them.
+
+<img src="https://images.ladbible.com/resize?type=webp&quality=70&width=1080&fit=contain&gravity=auto&url=https://images.ladbiblegroup.com/v3/assets/bltcd74acc1d0a99f3a/blt549fc13e5d1de40b/673647d7008bd3af4df907d3/tencommadn.png" width="200" height="200">
+
+
+
+Hm?
+
+(click: "Hm?")[Please enter your name:
+
+(set: $name to (prompt: "Enter your name:", ""))
+(set: $vbName to (verbatim-print: $name))
+
+Greetings, $vbName
+]
+
+[[Keep chatting->TabletScene]]
+
+
+:: Head onward {"position":"450,550","size":"100,100"}
+After what seemed like forever, you finally arrive in the city. You notice a bunch of guards walking around and you decide to ask the guards on this place)
+
+(click: "ask the guards")
+
+[What is this place?]
+
+(click: "place")
+
+[Lazy Guard: Atocha]
+
+(click: "Atocha")
+
+[What happened?]
+
+(click: "happened") 
+
+[Lazy Guard: You know, shit boiled down and here we are trying to make ends meet... though I could use a burger, with the works? Maybe?]
+
+[[Look for supplies->FoodScene]] or [[Damn... that's hard->SlabScene]]
+
+
+
+:: Introduction {"position":"250,925","size":"100,100"}
+PYTHO: Master, you have a new commission from the professor, would you like me to direct you to him?
+
+(click: "him")
+
+[Sure, lead the way]
+
+(click: "way")
+
+[PYTHO: You shall meet with him shortly...]
+
+[[Keep chatting->Title]]
+
+
+:: SlabScene {"position":"375,675","size":"100,100"}
+"Huh", you said. "That kinda sucks... Sorry"
+
+ToT
+
+
+:: Start {"position":"175,525","size":"100,100"}
+You wake up in what seems like a desert. 
+
+You ask yourself a lot of things. "Why am I here?", "What is this place?". You stare off in the distance a city and observe. 
+
+(click:"observe") [You realize it now. You can find help, and maybe get out of this place. But that means you gotta walk... for a LONG time.
+
+[[Get up to go towards the city | Go]] or [[Ehh, I'll just rest for a bit...]]]
+
+
+
+:: TabletScene {"position":"250,800","size":"100,100"}
+"I am PYTHO. Running version 1.0. How may I be of assistance to you Master?"
+
+(click:"assistance")
+
+[Where am I, what is this place?]
+
+(click:"place")
+
+[PYTHO: You are situated in coordinates 50 X and 30 Y in Lookout Post.]
+
+[[Keep chatting->Introduction]]
+
+
+:: Title {"position":"250,1050","size":"100,100"}
+Kingdom Come
+
+(click: "Kingdom Come")
+
+[Thank you for playing the demo. A full version will be available shortly]
